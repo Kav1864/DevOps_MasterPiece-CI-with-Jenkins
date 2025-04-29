@@ -20,8 +20,7 @@ pipeline {
     stages {
         stage('Checkout Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/Kav1864/DevOps_MasterPiece-CI-with-Jenkins.git
-'
+                git branch: 'main', url: 'https://github.com/Kav1864/DevOps_MasterPiece-CI-with-Jenkins.git'
             }
         }
 
