@@ -12,7 +12,7 @@ pipeline {
         GIT_REPO_NAME = "DevOps_MasterPiece-CD-with-argocd"
         GIT_USER_NAME = "praveensirvi1212"
         
-        ARTIFACTORY_URL = "http://34.71.137.63:8081/artifactory"
+        ARTIFACTORY_URL = "http://34.44.45.11:8081/artifactory"
         ARTIFACTORY_REPO = "my-local-repo"
         ARTIFACTORY_CREDENTIALS = "jfrog-cred"
     }
@@ -20,7 +20,7 @@ pipeline {
     stages {
         stage('Checkout Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/praveensirvi1212/DevOps_MasterPiece-CI-with-Jenkins.git'
+                git branch: 'main', url: 'https://github.com/Kav1864/DevOps_MasterPiece-CI-with-Jenkins'
             }
         }
 
