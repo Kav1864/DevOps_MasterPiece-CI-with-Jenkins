@@ -14,7 +14,7 @@ pipeline {
         
         ARTIFACTORY_URL = "http://35.223.144.21:8081/artifactory"
         ARTIFACTORY_REPO = "my-local-repo"
-        ARTIFACTORY_CREDENTIALS = "jfrog-cred"
+        ARTIFACTORY_CREDENTIALS = "jfrogcredentials"
     }
 
     stages {
