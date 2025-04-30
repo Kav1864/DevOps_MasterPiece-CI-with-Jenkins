@@ -92,6 +92,18 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    // Replace the image tag dynamically in deployment.yaml
+                    sh """
+                        sed -i 's|image:.*|image: ${IMAGE_TAG}|' k8s/deployment.yaml
+                        kubectl apply -f k8s/deployment.yaml
+                        kubectl apply -f k8s/service.yaml
+                    """
+                }
+            }
+        }
     }
 
     post {
