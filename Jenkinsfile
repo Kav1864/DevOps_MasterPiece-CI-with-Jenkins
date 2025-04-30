@@ -12,7 +12,7 @@ pipeline {
         GIT_REPO_NAME = "DevOps_MasterPiece-CD-with-argocd"
         GIT_USER_NAME = "praveensirvi1212"
         
-        ARTIFACTORY_URL = "http://35.223.144.21:8081/artifactory"
+        ARTIFACTORY_URL = "http://34.121.185.30:8081/artifactory"
         ARTIFACTORY_REPO = "my-local-repo"
         ARTIFACTORY_CREDENTIALS = "jfrogcredentials"
     }
