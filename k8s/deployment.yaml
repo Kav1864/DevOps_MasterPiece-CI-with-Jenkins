@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: spring-app
-        image: kavyasree1864/spring-app:21-0fefcab2edeb2c4c87b168679057b4a20dccbb80
+        image: insure-me:latest
         ports:
         - containerPort: 8080
